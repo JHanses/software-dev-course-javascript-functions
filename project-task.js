@@ -72,3 +72,53 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// Function to say hello to someone
+function sayHello(name) {
+  console.log("Welcome, " + name + "!");
+}
+
+// Function to add two numbers
+function addNumbers(num1, num2) {
+  let total = num1 + num2;
+  return total;
+}
+
+// Function to multiply two numbers
+function multiplyNumbers(num1, num2) {
+  let result = num1 * num2;
+  return result;
+}
+
+// Function to print all names in a list
+function showNames(list) {
+  console.log("Names in the list:");
+  for (let i = 0; i < list.length; i++) {
+    console.log(list[i]);
+  }
+}
+
+// ============================================
+// Using the Functions
+// ============================================
+
+// Greeting users
+sayHello("Alice");
+sayHello("Bob");
+sayHello("Charlie");
+
+// Adding numbers
+let num1 = 5;
+let num2 = 10;
+let sum = addNumbers(num1, num2);
+console.log("The sum of " + num1 + " and " + num2 + " is " + sum);
+
+// Multiplying numbers
+let product = multiplyNumbers(num1, num2);
+console.log("The product of " + num1 + " and " + num2 + " is " + product);
+
+// Showing names
+let names = ["Alice", "Bob", "Charlie"];
+showNames(names);
+
+
